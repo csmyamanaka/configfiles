@@ -15,7 +15,7 @@ import XMonad.Util.Run
 import XMonad.Util.SpawnOnce
 
 -- "tiles with gaps". I like the i3-gaps-esque appearance
-tileswsgaps = spacingRaw False (Border 5 5 5 5) True (Border 5 5 5 5) True $ Tall 1 0.05 0.5
+tileswgaps = spacingRaw False (Border 5 5 5 5) True (Border 5 5 5 5) True $ Tall 1 0.05 0.5
 
 -- additional keybindings including special keys
 specKeys = [ ("M-S-l", spawn "sh .local/scripts/lockscript.sh")
@@ -26,7 +26,7 @@ specKeys = [ ("M-S-l", spawn "sh .local/scripts/lockscript.sh")
 
 main = do
   statbar <- spawnPipe "xmobar $HOME/.config/xmobar/xmobarrc"
-  xmonad $ dock desktopConfig
+  xmonad $ docks desktopConfig
     { terminal = "urxvt"
     , modMask = mod4Mask
     , layoutHook = avoidStruts tileswgaps
