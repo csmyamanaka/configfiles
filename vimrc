@@ -18,4 +18,7 @@ set autoindent
 set showmatch
 
 "I only need line numbers for specific things
-au filetype c,python,java,haskell set number
+au filetype c,cpp,python,java,haskell set number
+
+"I usually write make files regardless of the language I use so this is set globally
+nnoremap <leader>c :make<CR>
