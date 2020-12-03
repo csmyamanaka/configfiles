@@ -17,8 +17,8 @@ config.set("colors.webpage.darkmode.enabled", True)
 
 #search engine shortcuts
 se = {"DEFAULT": "https://duckduckgo.com/?q={}",
-  "yt": "https://ww.youtube.com/results?search_query={}",
+  "yt": "https://www.youtube.com/results?search_query={}",
   "arch": "https://wiki.archlinux.org/index.php/{}",
-  "wp", "https://www.reddit.com/r/wallpaper/search?q={}&restrict_sr=1"}
+  "wp": "https://www.reddit.com/r/wallpaper/search?q={}&restrict_sr=1"}
 
 config.set("url.searchengines", se)
