@@ -13,7 +13,8 @@ config.set("url.start_pages", ["https://duckduckgo.com"])
 config.set("url.default_page", "https://duckduckgo.com")
 
 #enable "cool" mode
-config.set("colors.webpage.darkmode.enabled", True)
+#may not work depending on the version
+#config.set("colors.webpage.darkmode.enabled", True)
 
 #search engine shortcuts
 se = {"DEFAULT": "https://duckduckgo.com/?q={}",
