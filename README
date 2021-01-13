@@ -5,4 +5,9 @@ email: myamanaka@live.com
 website: csmyamanaka.com
 license: MIT License (See "LICENSE")
 
-
+Items:
+======
+- XMonad config
+- vim resource file
+- xinit resource file
+- Qutebrowser config file
